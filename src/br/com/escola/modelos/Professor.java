@@ -1,7 +1,7 @@
 package br.com.escola.modelos;
 
 public class Professor extends Pessoa{
-    public Professor(String nome, int idade, String rg, char sexo) {
+    public Professor(String nome, int idade, String rg, char sexo ) {
         super(nome, idade, rg, sexo);
     }
 

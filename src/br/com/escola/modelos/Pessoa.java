@@ -6,11 +6,17 @@ public abstract class Pessoa implements Comparable<Pessoa> {
     protected String rg;
     protected char sexo;
 
+    public Pessoa(){
+
+    }
+
     public Pessoa(String nome, int idade, String rg, char sexo) {
         this.nome = nome;
         this.idade = idade;
         this.rg = rg;
         this.sexo = sexo;
+
+
     }
 
     public String getNome() {

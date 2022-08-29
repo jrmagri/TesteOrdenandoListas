@@ -10,10 +10,10 @@ import java.util.List;
 
 public class main {
     public static void main(String[] args) {
-        Aluno a = new Aluno("Juninho", 19, "48.802.999-5", 'M');
+        Aluno a = new Aluno("Juninho", 18, "48.802.999-5", 'M');
         Aluno a1 = new Aluno("Julia", 16, "48.802.999-5", 'F');
         Aluno a2 = new Aluno("Bruna", 15, "58.866.876-9", 'F');
-        Aluno a3 = new Aluno("Jorge", 25, "23.765.542-2", 'M');
+        Aluno a3 = new Aluno("Jorge", 21, "23.765.542-2", 'M');
         Aluno a4 = new Aluno("Paula", 19, "34.862.876-9", 'F');
         Aluno a5 = new Aluno("Pedro", 13, "54.654.989-8", 'M');
         Aluno a6 = new Aluno("Julio", 19, "21.765.249-8", 'M');
@@ -45,28 +45,29 @@ public class main {
         List<Pessoa> pessoasMaiores = new ArrayList<>();
 
         System.out.println("Lista completa ");
-        for (Pessoa pessoas : listaPessoas
-                ) {
-            System.out.println(pessoas);
-        }
+        listaPessoas.forEach(pessoa -> {
+            System.out.println(pessoa);
+        });
 
         System.out.println("---------------------");
 
         Collections.sort(listaPessoas);
         System.out.println("Lista ordenada por idade: ");
-        for (Pessoa pessoas: listaPessoas
-             ) {
-            if(pessoas.getIdade() > 18){
-                pessoasMaiores.add(pessoas);
+        listaPessoas.forEach(pessoa -> {
+            if(pessoa.getIdade() >= 18){
+                pessoasMaiores.add(pessoa);
             }
-            System.out.println(pessoas);
-        }
-
-        System.out.println("----------------Maiores de idade ----------------------");
-        System.out.println(pessoasMaiores);
+            System.out.println(pessoa);
+        });
 
 
 
+
+
+
+
+         System.out.println("----------------Lista com maiores de idade ----------------------");
+         System.out.println(pessoasMaiores);
 
 
     }
