@@ -61,7 +61,7 @@ public abstract class Pessoa implements Comparable<Pessoa> {
     }
 
     @Override
-    public int compareTo(Pessoa ref) {
-        return (this.idade - ref.getIdade());
+    public int compareTo(Pessoa outraIdade) {
+        return (this.idade - outraIdade.getIdade());
     }
 }

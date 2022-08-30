@@ -41,8 +41,11 @@ public class main {
         listaPessoas.add(p4);
         listaPessoas.add(p5);
         listaPessoas.add(p6);
+        listaPessoas.add( new Aluno("Carlos", 23, "2327837283", 'M'));
+        listaPessoas.add( new Professor("Julieta", 58, "232323-49", 'F'));
 
         List<Pessoa> pessoasMaiores = new ArrayList<>();
+        List<Pessoa> pessoasMenores = new ArrayList<>();
 
         System.out.println("Lista completa ");
         listaPessoas.forEach(pessoa -> {
@@ -57,6 +60,9 @@ public class main {
             if(pessoa.getIdade() >= 18){
                 pessoasMaiores.add(pessoa);
             }
+            if(pessoa.getIdade() <18){
+                pessoasMenores.add(pessoa);
+            }
             System.out.println(pessoa);
         });
 
@@ -68,6 +74,9 @@ public class main {
 
          System.out.println("----------------Lista com maiores de idade ----------------------");
          System.out.println(pessoasMaiores);
+
+        System.out.println("-----------------Lsta com menos de idade --------------------------");
+        System.out.println(pessoasMenores);
 
 
     }
