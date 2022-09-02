@@ -1,5 +1,7 @@
 package br.com.escola.modelos;
 
+import java.util.Objects;
+
 public abstract class Pessoa implements Comparable<Pessoa> {
     protected String nome;
     protected int idade;
@@ -63,5 +65,16 @@ public abstract class Pessoa implements Comparable<Pessoa> {
     @Override
     public int compareTo(Pessoa outraIdade) {
         return (this.idade - outraIdade.getIdade());
+    }
+
+    @Override
+    public boolean equals(Object outraPessoa) {
+        Pessoa pessoa = (Pessoa) outraPessoa;
+        return this.nome == ((Pessoa) outraPessoa).getNome();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nome, idade, rg, sexo);
     }
 }

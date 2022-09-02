@@ -25,6 +25,8 @@ public class main {
         Professor p4 = new Professor("Juliana", 32, "34.802.943-4", 'F');
         Professor p5 = new Professor("Pascoal", 31, "34.802.943-4", 'M');
         Professor p6 = new Professor("Robert", 37, "34.802.943-4", 'M');
+        Professor p7 = new Professor("Fabiana", 45, "34.802.923-4", 'F');
+        System.out.println(p1.equals(p7));
 
         List<Pessoa> listaPessoas = new ArrayList<>();
         listaPessoas.add(a);
