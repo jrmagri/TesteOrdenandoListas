@@ -1,6 +1,6 @@
 package br.com.escola.modelos;
 
-import java.util.Objects;
+import java.util.*;
 
 public abstract class Pessoa implements Comparable<Pessoa> {
     protected String nome;
@@ -8,7 +8,8 @@ public abstract class Pessoa implements Comparable<Pessoa> {
     protected String rg;
     protected char sexo;
 
-    public Pessoa(){
+
+    public Pessoa() {
 
     }
 
@@ -20,6 +21,7 @@ public abstract class Pessoa implements Comparable<Pessoa> {
 
 
     }
+
 
     public String getNome() {
         return nome;

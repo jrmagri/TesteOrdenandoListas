@@ -28,6 +28,8 @@ public class main {
         Professor p7 = new Professor("Fabiana", 45, "34.802.923-4", 'F');
         System.out.println(p1.equals(p7));
 
+
+
         List<Pessoa> listaPessoas = new ArrayList<>();
         listaPessoas.add(a);
         listaPessoas.add(a1);
@@ -50,9 +52,12 @@ public class main {
         List<Pessoa> pessoasMenores = new ArrayList<>();
 
         System.out.println("Lista completa ");
-        listaPessoas.forEach(pessoa -> {
-            System.out.println(pessoa);
-        });
+        for (int i = 0; i < listaPessoas.size(); i++) {
+            System.out.println(listaPessoas.get(i));
+        }
+        //listaPessoas.forEach(pessoa -> {
+            //System.out.println(pessoa);
+        //});
 
         System.out.println("---------------------");
 
@@ -77,7 +82,7 @@ public class main {
          System.out.println("----------------Lista com maiores de idade ----------------------");
          System.out.println(pessoasMaiores);
 
-        System.out.println("-----------------Lsta com menos de idade --------------------------");
+        System.out.println("-----------------Lsta com menores de idade --------------------------");
         System.out.println(pessoasMenores);
 
 
