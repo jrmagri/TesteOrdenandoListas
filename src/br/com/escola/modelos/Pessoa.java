@@ -2,16 +2,11 @@ package br.com.escola.modelos;
 
 import java.util.*;
 
-public abstract class Pessoa implements Comparable<Pessoa> {
+public abstract class Pessoa  implements Comparable<Pessoa> {
     protected String nome;
     protected int idade;
     protected String rg;
     protected char sexo;
-
-
-    public Pessoa() {
-
-    }
 
     public Pessoa(String nome, int idade, String rg, char sexo) {
         this.nome = nome;
@@ -19,9 +14,7 @@ public abstract class Pessoa implements Comparable<Pessoa> {
         this.rg = rg;
         this.sexo = sexo;
 
-
     }
-
 
     public String getNome() {
         return nome;
@@ -58,7 +51,7 @@ public abstract class Pessoa implements Comparable<Pessoa> {
     @Override
     public String toString() {
         return
-                "Nome : " + nome +
+                " Nome : " + nome +
                         ", Idade : " + idade +
                         ", RG : " + rg +
                         ", Sexo : " + sexo;

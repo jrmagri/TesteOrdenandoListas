@@ -10,15 +10,14 @@ import java.util.*;
 public class teste {
     public static void main(String[] args) {
 
-        Aluno a = new Aluno("Juninho", 18, "48.802.999-5", 'M');
-        Aluno a1 = new Aluno("Julia", 16, "48.854.999-5", 'F');
-        Aluno a2 = new Aluno("Bruna", 15, "58.866.876-9", 'F');
-        Aluno a3 = new Aluno("Jorge", 21, "23.765.542-2", 'M');
-        Aluno a4 = new Aluno("Paula", 19, "34.862.876-9", 'F');
-        Aluno a5 = new Aluno("Pedro", 13, "54.654.989-8", 'M');
-        Aluno a6 = new Aluno("Julio", 19, "21.765.249-8", 'M');
-        Aluno a7 = new Aluno("Julio", 19, "21.765.249-8", 'M');
-
+        Aluno a = new Aluno("Juninho", 18, "48.802.999-5", 'M', 0001);
+        Aluno a1 = new Aluno("Julia", 16, "48.854.999-5", 'F', 3402);
+        Aluno a2 = new Aluno("Bruna", 15, "58.866.876-9", 'F', 2303);
+        Aluno a3 = new Aluno("Jorge", 21, "23.765.542-2", 'M', 1004);
+        Aluno a4 = new Aluno("Paula", 19, "34.862.876-9", 'F', 0345);
+        Aluno a5 = new Aluno("Pedro", 13, "54.654.989-8", 'M', 0126);
+        Aluno a6 = new Aluno("Julio", 19, "21.765.249-8", 'M', 2347);
+        Aluno a7 = new Aluno("Julio", 19, "21.765.249-8", 'M', 5678);
 
         Professor p = new Professor("Paulao", 35, "34.802.943-4", 'M');
         Professor p1 = new Professor("Fabiana", 40, "34.802.943-4", 'F');
@@ -38,12 +37,8 @@ public class teste {
         lista.add(a5);
         lista.add(a7);
 
-
-
-        for (Pessoa pessoas : lista
-                ) {
+        for (Pessoa pessoas : lista) {
             System.out.println(pessoas);
-
         }
 
         //lista.forEach(pessoa -> System.out.println(pessoa));
@@ -56,11 +51,7 @@ public class teste {
         numeroRgAlunos.put("34.862.876-9", a4);
 
         System.out.println("Quem é o aluno do RG: 48.802.999-5? ");
-        System.out.println(numeroRgAlunos.get("48.802.999-5"));
-
-
-
-
+        System.out.println(numeroRgAlunos.get(a.getRg()));
 
     }
 }
