@@ -32,7 +32,7 @@ public class testeEscola {
 
         Diocesano.getAlunos().forEach(alunos -> System.out.println(alunos));
 
-        System.out.println("Quem é o aluno de matricula 0126? ");
+        System.out.println("Quem é o aluno de matricula 2126? ");
         Aluno aluno = Diocesano.buscaMatricula(2126);
         System.out.println("Escola: "+ Diocesano.getNome()+ aluno);
 
