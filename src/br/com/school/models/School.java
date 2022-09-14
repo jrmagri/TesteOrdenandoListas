@@ -27,8 +27,8 @@ public abstract class School {
         return students;
     }
 
-    public Student searchForRegistration(int numero) {
-        return numberRegistration.get(numero);
+    public Student searchForRegistration(int number) {
+        return numberRegistration.get(number);
     }
 
     @Override
