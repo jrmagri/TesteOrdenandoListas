@@ -1,4 +1,4 @@
-package br.com.school.teste;
+package br.com.school.test;
 
 import br.com.school.models.Student;
 import br.com.school.models.Person;
