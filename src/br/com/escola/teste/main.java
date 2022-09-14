@@ -9,7 +9,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Aluno a = new Aluno("Juninho", 18, "48.802.999-5", 'M', 0001);
         Aluno a1 = new Aluno("Julia", 16, "48.854.999-5", 'F', 3402);
         Aluno a2 = new Aluno("Bruna", 15, "58.866.876-9", 'F', 2303);

@@ -8,6 +8,7 @@ import java.util.Set;
 public class Escola {
     private String nome;
     private Set<Pessoa> alunos = new HashSet<>();
+    public Set<Professor> professores = new HashSet<>();
     private Map<Integer, Aluno> numeroMatricula = new HashMap<>();
 
     public Escola(String nome){

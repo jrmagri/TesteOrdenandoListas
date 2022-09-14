@@ -10,6 +10,9 @@ public abstract class Pessoa  implements Comparable<Pessoa> {
 
     public Pessoa(String nome, int idade, String rg, char sexo) {
         this.nome = nome;
+        if(idade <= 0){
+            throw new idadeNegativaExcpetion("Idade não pode ser 0!!!");
+        }
         this.idade = idade;
         this.rg = rg;
         this.sexo = sexo;

@@ -5,10 +5,13 @@ public class Aluno extends Pessoa {
 
     public Aluno(String nome, int idade, String rg, char sexo, int numeroMatricula) {
         super(nome, idade, rg, sexo);
-        this.numeroMatricula = numeroMatricula;
+        setNumeroMatricula(numeroMatricula);
     }
 
     public void setNumeroMatricula(int numeroMatricula) {
+        if(numeroMatricula <=0){
+            throw new numeroMatriculaException("O numero de matricula não pode ser 0, ou menor que 0!!! ");
+        }
         this.numeroMatricula = numeroMatricula;
     }
 

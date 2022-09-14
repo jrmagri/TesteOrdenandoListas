@@ -8,7 +8,7 @@ import javax.swing.text.StyledEditorKit;
 import java.util.*;
 
 public class teste {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         Aluno a = new Aluno("Juninho", 18, "48.802.999-5", 'M', 0001);
         Aluno a1 = new Aluno("Julia", 16, "48.854.999-5", 'F', 3402);
