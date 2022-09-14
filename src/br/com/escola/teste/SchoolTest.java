@@ -1,12 +1,12 @@
 package br.com.escola.teste;
 
 import br.com.escola.modelos.Diocesano;
-import br.com.escola.modelos.Escola;
+import br.com.escola.modelos.School;
 import org.junit.Test;
 
-public class EscolaTest {
+public class SchoolTest {
     @Test
     public void instanciarEscolas(){
-        Escola diocesano = new Diocesano("diocesano");
+        School diocesano = new Diocesano("diocesano");
     }
 }
