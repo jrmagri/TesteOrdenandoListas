@@ -1,4 +1,4 @@
-package br.com.escola.modelos;
+package br.com.school.models;
 
 public class Militao extends School {
     public Militao(String name) {

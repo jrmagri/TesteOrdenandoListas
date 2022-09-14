@@ -1,4 +1,4 @@
-package br.com.escola.modelos;
+package br.com.school.models;
 
 public class JulianoNeto extends School {
     public JulianoNeto(String name) {

@@ -1,7 +1,7 @@
-package br.com.escola.teste;
+package br.com.school.teste;
 
-import br.com.escola.modelos.Diocesano;
-import br.com.escola.modelos.School;
+import br.com.school.models.Diocesano;
+import br.com.school.models.School;
 import org.junit.Test;
 
 public class SchoolTest {

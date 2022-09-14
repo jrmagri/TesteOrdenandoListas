@@ -1,4 +1,4 @@
-package br.com.escola.modelos;
+package br.com.school.models;
 
 public class negativeAgeException extends RuntimeException{
 

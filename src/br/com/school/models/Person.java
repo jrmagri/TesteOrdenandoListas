@@ -1,4 +1,4 @@
-package br.com.escola.modelos;
+package br.com.school.models;
 
 import java.util.*;
 

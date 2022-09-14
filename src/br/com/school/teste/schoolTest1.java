@@ -1,6 +1,6 @@
-package br.com.escola.teste;
+package br.com.school.teste;
 
-import br.com.escola.modelos.*;
+import br.com.school.models.*;
 
 public class schoolTest1 {
     public static void main(String[] args) {
@@ -34,7 +34,7 @@ public class schoolTest1 {
         Militao.registration(a10);
         Militao.registration(a11);
 
-        System.out.println(Diocesano.getStudents());
+        //System.out.println(Diocesano.getStudents());
         System.out.println("Alunos da Escola DIOCESANO LA SALLE: ");
         System.out.println("----------------------------------");
         Diocesano.getStudents().forEach(students -> System.out.println(students));

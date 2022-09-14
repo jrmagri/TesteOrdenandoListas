@@ -1,8 +1,8 @@
-package br.com.escola.teste;
+package br.com.school.teste;
 
-import br.com.escola.modelos.Student;
-import br.com.escola.modelos.Person;
-import br.com.escola.modelos.Teacher;
+import br.com.school.models.Student;
+import br.com.school.models.Person;
+import br.com.school.models.Teacher;
 
 import java.util.ArrayList;
 import java.util.Collections;
