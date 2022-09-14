@@ -47,6 +47,5 @@ public class schoolTest1 {
         System.out.println("Quem é o aluno de matricula 2126? ");
         Student student = Diocesano.searchForRegistration(2126);
         System.out.println("Escola: " + Diocesano.getName() + student);
-
     }
 }
