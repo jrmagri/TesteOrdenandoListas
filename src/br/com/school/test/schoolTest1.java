@@ -34,8 +34,6 @@ public class schoolTest1 {
         militao.registration(a10);
         militao.registration(a11);
 
-
-
         //System.out.println(diocesano.getStudents());
         System.out.println("Alunos da Escola DIOCESANO LA SALLE: ");
         System.out.println("----------------------------------");

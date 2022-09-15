@@ -66,7 +66,7 @@ public abstract class Person implements Comparable<Person> {
 
     @Override
     public boolean equals(Object outraPessoa) {
-        Person person = (Person) outraPessoa;
+        Person Person = (Person) outraPessoa;
         return this.name == ((Person) outraPessoa).getName();
     }
 
