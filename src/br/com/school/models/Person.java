@@ -1,6 +1,6 @@
 package br.com.school.models;
 
-import java.util.*;
+import java.util.Objects;
 
 public abstract class Person implements Comparable<Person> {
     protected String name;

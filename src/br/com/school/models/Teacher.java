@@ -13,6 +13,5 @@ public class Teacher extends Person {
     @Override
     public int compareTo(Person outraIdade) {
         return (this.age - outraIdade.getAge());
-
     }
 }

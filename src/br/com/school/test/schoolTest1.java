@@ -4,9 +4,9 @@ import br.com.school.models.*;
 
 public class schoolTest1 {
     public static void main(String[] args) {
-        School Diocesano = new Diocesano("Diocesano La salle");
-        School Militao = new Militao("Militao Antonio de Lima");
-        School Juliano = new JulianoNeto("Juliano Neto");
+        School diocesano = new Diocesano("diocesano La salle");
+        School militao = new Militao("militao Antonio de Lima");
+        School juliano = new JulianoNeto("juliano Neto");
 
         Student a = new Student("Juninho", 18, "48.802.999-5", 'M', 1001);
         Student a1 = new Student("Julia", 16, "48.854.999-5", 'F', 3402);
@@ -21,32 +21,33 @@ public class schoolTest1 {
         Student a10 = new Student("Judivan", 12, "23.715.549-3", 'M', 5764);
         Student a11 = new Student("Julio", 19, "22.715.229-3", 'M', 7642);
 
-        Diocesano.registration(a);
-        Diocesano.registration(a1);
-        Diocesano.registration(a2);
-        Diocesano.registration(a3);
-        Diocesano.registration(a4);
-        Diocesano.registration(a5);
-        Diocesano.registration(a6);
-        Diocesano.registration(a7);
-        Militao.registration(a8);
-        Militao.registration(a9);
-        Militao.registration(a10);
-        Militao.registration(a11);
+        diocesano.registration(a);
+        diocesano.registration(a1);
+        diocesano.registration(a2);
+        diocesano.registration(a3);
+        diocesano.registration(a4);
+        diocesano.registration(a5);
+        diocesano.registration(a6);
+        diocesano.registration(a7);
+        militao.registration(a8);
+        militao.registration(a9);
+        militao.registration(a10);
+        militao.registration(a11);
 
 
-        //System.out.println(Diocesano.getStudents());
+
+        //System.out.println(diocesano.getStudents());
         System.out.println("Alunos da Escola DIOCESANO LA SALLE: ");
         System.out.println("----------------------------------");
-        Diocesano.getStudents().forEach(students -> System.out.println(students));
+        diocesano.getStudents().forEach(students -> System.out.println(students));
         System.out.println("----------------------------------");
 
-        System.out.println("Alunos da Escola Militao Antonio de Lima: ");
+        System.out.println("Alunos da Escola militao Antonio de Lima: ");
         System.out.println("----------------------------------");
-        Militao.getStudents().forEach(students -> System.out.println(students));
+        militao.getStudents().forEach(students -> System.out.println(students));
 
         System.out.println("Quem é o aluno de matricula 2126? ");
-        Student student = Diocesano.searchForRegistration(2126);
-        System.out.println("Escola: " + Diocesano.getName() + student);
+        Student student = diocesano.searchForRegistration(2126);
+        System.out.println("Escola: " + diocesano.getName() + student);
     }
 }
