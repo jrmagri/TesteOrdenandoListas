@@ -10,7 +10,6 @@ public class Teacher extends Person {
     public void setNumberContract(int numberContract) {
         this.numberContract = numberContract;
     }
-
     public int getNumberContract() {
         return numberContract;
     }

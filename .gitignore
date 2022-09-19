@@ -2,6 +2,7 @@
 /shelf/
 /workspace.xml
 /out/
+/target/
 
 ### IntelliJ IDEA ###
 .idea
