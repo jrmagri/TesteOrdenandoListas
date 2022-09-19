@@ -19,14 +19,14 @@ public class main {
         Student a6 = new Student("Julio", 19, "21.765.249-8", 'M', 2347);
         Student a7 = new Student("Julio", 19, "21.765.249-8", 'M', 5678);
 
-        Teacher p = new Teacher("Paulao", 35, "34.802.943-4", 'M');
-        Teacher p1 = new Teacher("Fabiana", 40, "34.802.943-4", 'F');
-        Teacher p2 = new Teacher("Andrea", 45, "34.802.943-4", 'F');
-        Teacher p3 = new Teacher("Wilson", 50, "34.802.943-4", 'M');
-        Teacher p4 = new Teacher("Juliana", 32, "34.802.943-4", 'F');
-        Teacher p5 = new Teacher("Pascoal", 31, "34.802.943-4", 'M');
-        Teacher p6 = new Teacher("Robert", 37, "34.802.943-4", 'M');
-        Teacher p7 = new Teacher("Fabiana", 45, "34.802.923-4", 'F');
+        Teacher p = new Teacher("Paulao", 56, "234.324.442-45", 'M', 4356);
+        Teacher p1 = new Teacher("Fabiana", 40, "34.802.943-4", 'F', 4557);
+        Teacher p2 = new Teacher("Andrea", 45, "34.802.943-4", 'F', 4558);
+        Teacher p3 = new Teacher("Wilson", 50, "34.802.943-4", 'M', 4559);
+        Teacher p4 = new Teacher("Juliana", 32, "34.802.943-4", 'F', 4560);
+        Teacher p5 = new Teacher("Pascoal", 31, "34.802.943-4", 'M', 4561);
+        Teacher p6 = new Teacher("Robert", 37, "34.802.943-4", 'M', 4562);
+        Teacher p7 = new Teacher("Fabiana", 45, "34.802.923-4", 'F', 4563);
         System.out.println(p1.equals(p7));
 
         List<Person> listPeople = new ArrayList<>();
@@ -45,7 +45,6 @@ public class main {
         listPeople.add(p5);
         listPeople.add(p6);
         listPeople.add( new Student("Carlos", 23, "2327837283", 'M', 4574));
-        listPeople.add( new Teacher("Julieta", 58, "232323-49", 'F'));
 
         List<Person> olderPeople = new ArrayList<>();
         List<Person> minorPeople = new ArrayList<>();
@@ -72,18 +71,10 @@ public class main {
             System.out.println(people);
         });
 
-
-
-
-
-
-
          System.out.println("----------------Lista com maiores de idade ----------------------");
          System.out.println(olderPeople);
 
         System.out.println("-----------------Lsta com menores de idade --------------------------");
         System.out.println(minorPeople);
-
-
     }
 }

@@ -8,7 +8,8 @@ public class Student extends Person {
         setNumberRegistration(numberRegistration);
     }
 
-    public void setNumberRegistration(int numberRegistration) {
+    //usando o final para o parametro não ser alterado
+    public void setNumberRegistration(final int numberRegistration) {
         if (numberRegistration <= 0) {
             throw new numberRegistrationException("O numero de matricula não pode ser 0, ou menor que 0!!! ");
         }

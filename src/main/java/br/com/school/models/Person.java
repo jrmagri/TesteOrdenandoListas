@@ -9,12 +9,9 @@ public abstract class Person implements Comparable<Person> {
     protected char genre;
 
     public Person(String name, int age, String document, char genre) {
-        this.name = name;
-        if (age <= 0) {
-            throw new negativeAgeException("Idade não pode ser 0!!!");
-        }
-        this.age = age;
-        this.document = document;
+        setName(name);
+        setAge(age);
+        setDocument(document);
         this.genre = genre;
     }
 
@@ -23,6 +20,9 @@ public abstract class Person implements Comparable<Person> {
     }
 
     public void setName(String name) {
+        if(name == null){
+            throw new NullPointerException("Nome não pode ser nulo!!!");
+        }
         this.name = name;
     }
 
@@ -31,6 +31,9 @@ public abstract class Person implements Comparable<Person> {
     }
 
     public void setAge(int age) {
+        if (age <= 0) {
+            throw new negativeAgeException("Idade não pode ser 0!!!");
+        }
         this.age = age;
     }
 
@@ -39,6 +42,9 @@ public abstract class Person implements Comparable<Person> {
     }
 
     public void setDocument(String document) {
+        if(document == null){
+            throw new NullPointerException("Documento não pode ser negativo!!!");
+        }
         this.document = document;
     }
 
