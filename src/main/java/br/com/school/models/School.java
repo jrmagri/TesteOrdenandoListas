@@ -21,7 +21,6 @@ public abstract class School {
     }
     public void registrationTeacher(Teacher teacher) {
         this.teachers.add(teacher);
-
     }
 
     public String getName() {

@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class StudentTest {
+public class StudentQuestao11 {
 
     @Test
     public void numeroDeMatriculaNegativoDeveriaLancarException() {

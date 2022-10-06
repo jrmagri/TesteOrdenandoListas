@@ -8,7 +8,7 @@ public class schoolTest1 {
         School militao = new Militao("militao Antonio de Lima");
         School juliano = new JulianoNeto("juliano Neto");
 
-        Student a = new Student("Juninho", 18, "48.802.999-5", 'M', 1001);
+        Student a = new Student("Lucas", 18, "48.802.999-5", 'M', 1001);
         Student a1 = new Student("Julia", 16, "48.854.999-5", 'F', 3402);
         Student a2 = new Student("Bruna", 15, "58.866.876-9", 'F', 2303);
         Student a3 = new Student("Jorge", 21, "23.765.542-2", 'M', 1004);
@@ -54,7 +54,7 @@ public class schoolTest1 {
 
         System.out.println("Alunos da Escola DIOCESANO LA SALLE: ");
         System.out.println("----------------------------------");
-        diocesano.getStudents().forEach(students -> System.out.println(students));
+        diocesano.getStudents().forEach(System.out::println);
         System.out.println("----------------------------------");
 
         System.out.println("Alunos da Escola militao Antonio de Lima: ");
